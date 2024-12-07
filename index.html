@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Rendimiento Académico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Rendimiento Académico</h1>
+    </header>
+
+    <main>
+        <section id="formulario">
+            <h2>Ingreso de Datos</h2>
+            <form id="calculoForm">
+                <div class="campo">
+                    <label for="asignatura">Asignatura:</label>
+                    <input type="text" id="asignatura" placeholder="Ejemplo: Matemáticas" required>
+                </div>
+                <div class="campo">
+                    <label for="calificacion">Calificación:</label>
+                    <input type="number" id="calificacion" min="0" max="20" step="0.1" placeholder="Ejemplo: 18" required>
+                </div>
+                <div class="campo">
+                    <label for="peso">Peso (%):</label>
+                    <input type="number" id="peso" min="1" max="100" placeholder="Ejemplo: 30" required>
+                </div>
+                <button type="button" id="agregar">Agregar</button>
+            </form>
+        </section>
+
+        <section id="resultados">
+            <h2>Lista de Calificaciones</h2>
+            <ul id="listaCalificaciones"></ul>
+            <button id="calcularPromedio">Calcular Promedio</button>
+            <div id="resultadoFinal"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Calculadora de Rendimiento Académico</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
